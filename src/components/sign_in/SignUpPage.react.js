@@ -43,6 +43,7 @@ const initialState = {
   name: '',
   email: '',
   password: '',
+  phone: '',
 };
 
 function SignUpPage(): Node {
@@ -77,6 +78,16 @@ function SignUpPage(): Node {
           value={state.name}
           onChange={handleChange}
           required
+        />
+        <TextField
+          id="standard-number"
+          label="Número"
+          type="number"
+          name="phone"
+          value={state.phone}
+          onChange={handleChange}
+          required
+          color="primary"
         />
         <TextField
           name="email"
