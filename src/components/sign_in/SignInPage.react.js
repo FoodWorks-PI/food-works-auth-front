@@ -30,7 +30,7 @@ const useStyles = makeStyles({
     fontSize: 15,
     fontWeight: 'bold',
     textTransform: 'uppercase',
-    marginTop: '1rem',
+    margin: '2rem 0 1rem 0',
   },
 });
 
@@ -55,7 +55,7 @@ function SignInPage(): Node {
       </Typography>
       <FacebookLoginButton className={classes.button} onClick={handleFacebookLogin} />
       <GoogleLoginButton className={classes.button} onClick={handleGoogleLogin} />
-      <TextLink className={classes.link} to="/">
+      <TextLink className={classes.link} to="/login">
         Más Opciones
       </TextLink>
     </div>
