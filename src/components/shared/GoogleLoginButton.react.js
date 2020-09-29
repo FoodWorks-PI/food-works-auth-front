@@ -5,15 +5,15 @@ import type {Node} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import clsx from 'clsx';
 
-import fbLogo from 'assets/facebook/f_logo_RGB-White_58.png';
+import gLogo from 'assets/google/g-logo.png';
 
 const useStyles = makeStyles({
   root: {
     background: 'none',
-    backgroundColor: '#1877F2',
-    color: '#fff',
+    backgroundColor: 'white',
+    color: '#797877',
     lineHeight: 1,
-    border: 'none',
+    border: '1px solid #797877',
     borderRadius: 8,
     display: 'flex',
     alignItems: 'center',
@@ -37,14 +37,14 @@ type Props = {
   className?: string,
 };
 
-function FacebookLoginButton(props: Props): Node {
+function GoogleLoginButton(props: Props): Node {
   const classes = useStyles();
   return (
     <button className={clsx(classes.root, props.className)} onClick={props.onClick}>
-      <img className={classes.logo} src={fbLogo} alt="Facebook Logo" />
-      <span className={classes.text}>Continua con Facebook</span>
+      <img className={classes.logo} src={gLogo} alt="Google Logo" />
+      <span className={classes.text}>Continua con Google</span>
     </button>
   );
 }
 
-export default FacebookLoginButton;
+export default GoogleLoginButton;
