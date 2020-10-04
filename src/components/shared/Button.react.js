@@ -20,6 +20,8 @@ const useStyles = makeStyles({
     fontSize: 18,
     textAlign: 'center',
     justifyContent: 'center',
+    fontFamily: 'Montserrat',
+    margin: '5px 0 5px 0',
   },
 });
 
